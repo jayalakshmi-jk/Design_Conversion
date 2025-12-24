@@ -91,7 +91,7 @@
 
         .girl1 img {
             width: 80%;
-            margin-left: 10%;
+            margin-left: 20%;
         }
 
         .text {
@@ -157,6 +157,7 @@
             width: 45px;
             right: 300px;
             top: 100px;
+            margin-right: -21%;
         }
 
         .star {
@@ -167,16 +168,19 @@
         .star2 {
             right: 190px;
             bottom: 80px;
+            margin-right: -12%;
         }
 
         .star3 {
             bottom: 7%;
             left: 39%;
+            margin-left: 5%;
         }
 
         .star4 {
             top: 50px;
             left: 470px;
+
         }
 
         .brands {
@@ -210,8 +214,8 @@
             font-weight: 700;
             position: relative;
             z-index: 10;
-             margin-bottom: -2%;
-           
+            margin-bottom: -2%;
+
         }
 
         .Newarrivals h1::after {
@@ -251,8 +255,7 @@
 
         .name {
             display: flex;
-            /* justify-content: space-evenly;   */
-            gap: 40%;
+            justify-content: space-between;
         }
 
         .arrow {
@@ -316,10 +319,12 @@
             margin-left: 5%;
             display: flex;
         }
+
         .fav-name {
             display: flex;
             gap: 35%;
         }
+
         .f-name {
             display: flex;
             gap: 60%;
@@ -333,6 +338,12 @@
             height: 90%;
             margin-bottom: 4%;
         }
+
+        .youngfavorities_1:hover {
+            transform: scale(1.05);
+            translate: 1px;
+        }
+
         .youngfavorities_2 {
             border-radius: 5%;
             width: 90%;
@@ -347,7 +358,8 @@
             margin: auto;
             z-index: 10;
         }
-        .n2 h1{
+
+        .n2 h1 {
             margin-left: 5%;
         }
 
@@ -376,7 +388,7 @@
         }
 
         .download {
-            width: 28%;
+            width: 39%;
             margin: auto;
         }
 
@@ -388,11 +400,13 @@
         .mobile img {
             height: 90%;
             margin-left: 2%;
+            margin-top: 5%;
         }
 
         .store-buttons {
             display: flex;
             gap: 12px;
+            margin-top: 7%;
         }
 
         .store-btn {
@@ -545,10 +559,16 @@
             border-radius: 5px;
             outline: none;
             cursor: pointer;
-            height: 30px;
-            margin-top: 7%;
-            width: 60px;
+            height: 40px;
+            margin-left: 15%;
+            width: 68px;
             border: none;
+        }
+
+        .send:hover {
+            background-color: #E6C744;
+            border: none;
+            box-shadow: 0px 0px 3px 1px gray;
         }
 
         /*============================= Footer ==========================*/
@@ -596,8 +616,9 @@
         .p1 {
             color: var(--grey);
         }
-        .shop:hover{
-            background-color:#E6C744;
+
+        .shop:hover {
+            background-color: #E6C744;
         }
 
 
@@ -762,25 +783,25 @@
             <div class="fav-img">
                 <div>
                     <img src="Assets/youngfavorities_1.png" class="youngfavorities_1">
-                <div class="fav-name">
-                    <div>
-                        <h3>Treanding on instagram</h3>
-                        <p class="p1">Explore Now!</p>
+                    <div class="fav-name">
+                        <div>
+                            <h3>Treanding on instagram</h3>
+                            <p class="p1">Explore Now!</p>
+                        </div>
+                        <div class="p1 arrow">→</div>
                     </div>
-                    <div class="p1 arrow">→</div>
-                </div>
                 </div>
                 <div>
                     <img src="Assets/youngfavorities_2.png" class="youngfavorities_2">
-                <div class="f-name">
-                    <div>
-                        <h3>All under $40</h3>
-                        <p class="p1">Explore Now!</p>
+                    <div class="f-name">
+                        <div>
+                            <h3>All under $40</h3>
+                            <p class="p1">Explore Now!</p>
+                        </div>
+                        <div class="p1 arrow">→</div>
                     </div>
-                    <div class="p1 arrow">→</div>
                 </div>
-                </div>
-                
+
             </div>
 
         </div>
@@ -830,7 +851,9 @@
             <p>Type your email down below and be young wild generation</p>
             <div class="search">
                 <input type="text" class="input" placeholder="Add your Email here">
-                <div class="btn"><button class="send">Send</button></div>
+                <div class="btn">
+                    <button class="send">Send</button>
+                </div>
             </div>
 
         </div>
